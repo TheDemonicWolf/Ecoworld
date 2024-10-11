@@ -1,0 +1,32 @@
+<!-- Создай страницу для вывода информации пользователя -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {margin: 0;
+    text-align: center;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 20px;
+    background-color: #3dd63d;
+    color: #272727;
+}
+    </style>
+</head>
+<body>
+    {% block content %}
+    <h1>Спасибо за заполнение формы!</h1>
+    <p>Ваше имя: {{ name }}</p>
+    <p>Ваша электронная почта: {{ email }}</p>
+    <p>Ваш адрес: {{ address }}</p>
+    <p>Ваша дата: {{ date }}</p>
+    <p>***
+        <img class="item__img" src="https://gas-kvas.com/grafic/uploads/posts/2023-10/1696501856_gas-kvas-com-p-kartinki-ekologiya-2.jpg" alt="battery">
+    </p>
+    {% endblock %}
+</body>
+</html>
